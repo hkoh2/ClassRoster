@@ -37,12 +37,12 @@ Student::~Student() {
 
 void Student::SetId(string id) {
 	this->id = id;
-
 }
+
 void Student::SetFirstName(string firstName) {
 	this->firstName = firstName;
-
 }
+
 void Student::SetLastName(string lastName) {
 	this->lastName = lastName;
 
@@ -75,7 +75,7 @@ void Student::SetDegree(DegreeProgram degree) {
 void Student::print() {
 	string degreeType[3] = { "SECURITY", "NETWORK", "SOFTWARE" };
 
-	cout << id << "\t" << firstName << "\t" << lastName << "\t" << age << "\t{";
+	cout << id << "\t" << firstName << "\t" << lastName << "\t\t" << age << "\t{";
 	for (int i = 0; i < 3; i++) {
 		cout << this->daysComplete[i];
 		if (i >= 2) {
